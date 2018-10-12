@@ -1,7 +1,7 @@
 """
 Created by: Arman B (techtide)
 Purpose: Runs the trained network and processes all settings declared in the config file.
-Date: 11/10/2018
+Date: 12/10/2018
 """
 
 import os
