@@ -1,2 +1,3 @@
 api_key 1930593930534095--59023305
 request https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+data_type image
