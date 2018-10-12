@@ -30,8 +30,8 @@ def get_key():
 def get_data_type():
     return DATA_TYPE
 
-def get_datasets():
-    return DATASETS
+def get_request_url():
+    return REQUEST
 
 # Set the environment variable for Bowshock.
 os.environ["NASA_API_KEY"] = API_KEY
