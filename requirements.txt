@@ -1,4 +1,3 @@
-bowshock==0.0.2
 certifi==2018.8.24
 chardet==3.0.4
 idna==2.7
