@@ -1,5 +1,8 @@
 # NASA Wrapper
-![Logo](https://www.festisite.com/static/partylogo/img/logos/nasa.png)
+<p align="center"> 
+<img src="https://www.festisite.com/static/partylogo/img/logos/nasa.png">
+</p>
+
 Please refer to my [in-depth guide and introduction to these APIs](https://github.com/techtide/space-demos) before you begin using this.
 
 This is how the plan is for the wrapper.
