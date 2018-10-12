@@ -6,4 +6,6 @@ Date: 11/10/2018
 
 from run import *
 
-print(get_key())
+import requests
+
+r = requests.get('')
