@@ -8,4 +8,6 @@ from run import *
 
 import requests
 
-r = requests.get('')
+r = requests.get(get_request_url())
+
+print(r.json())
