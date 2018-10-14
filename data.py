@@ -16,5 +16,5 @@ h = json.loads(str(r.text))
 
 if (get_data_type() == 'image'):
     imgurl = h["hdurl"]
-    urllib.request.urlretrieve(imgurl, "00000001.jpg")
+    urllib.request.urlretrieve(imgurl, "train/00000001.jpg")
     print(imgurl)
