@@ -15,8 +15,7 @@ import urllib.request
 
 if (get_data_type() == 'image'):
     i = 1
-    #icba to do the array properly
-    array1 = [[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]
+    array1 = []
     r1 = requests.get(get_request_url())
     h1 = json.loads(str(r1.text))
     d1 = h1["date"]
@@ -45,12 +44,14 @@ if (get_data_type() == 'image'):
             set_request_url(rurl[:-10] + d2)
             continue
         else:
+            temparray = [0, 0, 0]
             imgurl = h["hdurl"]
             imgnum = i
             urllib.request.urlretrieve(imgurl, "train/" + str(imgnum) + ".jpg")
-            array1[imgnum-1][0] = "train/" + str(imgnum) + ".jpg"
-            array1[imgnum-1][1] = "somelabel"
-            array1[imgnum-1][2] = "training"
+            temparray[0] = "train/" + str(imgnum) + ".jpg"
+            temparray[1] = "somelabel"
+            temparray[2] = "training"
+            array1.append(temparray)
             print(imgurl)
             dval = dval+1
             if (dval < opznum):
