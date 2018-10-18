@@ -1,3 +1,8 @@
 api_key enteryourkeyhere
 request https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2018-09-01
 data_type image
+label1 asteroid
+label2 nebula
+label3 supernova
+label4 earth
+label5

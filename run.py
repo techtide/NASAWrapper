@@ -5,10 +5,13 @@ Date: 12/10/2018
 """
 
 import os
+import numpy as np
 
 API_KEY = ""
 DATA_TYPE = ""
 REQUEST = ""
+
+LABELS = np.array()
 
 # Parse through the configuration file. Make sure your config follows the rules and style guide described in README.md.
 with open('config') as input_file:
@@ -24,6 +27,8 @@ with open('config') as input_file:
             REQUEST = currLine[1]
             REQUEST = REQUEST.replace("DEMO_KEY", API_KEY)
             print("Read request url: " + REQUEST)
+        if "label" in currLine[0]:
+            LABELS.add(currLine[1])
 
 def get_key():
     return API_KEY
@@ -45,6 +50,9 @@ def get_request_url():
 def set_request_url(val):
     global REQUEST
     REQUEST = val
+
+def get_labels():
+    return LABELS
 
 # Set the environment variable for Bowshock.
 os.environ["NASA_API_KEY"] = API_KEY
