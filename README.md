@@ -15,5 +15,3 @@ You should have your own ``brain.py`` and modified ``data.py`` to suit your need
 Remember to refer to the custom docs linked above on my GitHub. They show you how to use bowshock. This can be useful when making modifications. The library pyNASA can also be useful, but it doesn't provide access to the latest datasets found [here](https://data.nasa.gov/).
 
 Also please remember that anything you do with artificial intelligence is not just a _pick and choose_ process. It's not a supermarket. Make sure to think about what you're including in your mdoel.
-
-On
