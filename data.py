@@ -11,8 +11,6 @@ import json
 import urllib.request
 
 
-
-
 if (get_data_type() == 'image'):
     i = 1
     array1 = []
