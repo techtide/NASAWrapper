@@ -22,16 +22,29 @@ with open('config') as input_file:
             print("Read data type: " + DATA_TYPE)
         if currLine[0] == "request":
             REQUEST = currLine[1]
+            REQUEST = REQUEST.replace("DEMO_KEY", API_KEY)
             print("Read request url: " + REQUEST)
 
 def get_key():
     return API_KEY
 
+def set_key(val):
+    global API_KEY
+    API_KEY = val
+
 def get_data_type():
     return DATA_TYPE
 
+def set_data_type(val):
+    global DATA_TYPE
+    DATA_TYPE = val
+
 def get_request_url():
     return REQUEST
+
+def set_request_url(val):
+    global REQUEST
+    REQUEST = val
 
 # Set the environment variable for Bowshock.
 os.environ["NASA_API_KEY"] = API_KEY
