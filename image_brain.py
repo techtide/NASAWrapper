@@ -1,6 +1,6 @@
 """
 Created by: Arman B (techtide), adapted from teams at Google.
-Purpose: Handles and analyses the data. This one is for image classification.
+Purpose: Handles and analyses the data. This one is for image classification. It's just a sample that you need to make appropriate with your dataset.
 Date: 12/10/2018
 """
 
