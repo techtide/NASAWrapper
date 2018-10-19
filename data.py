@@ -10,12 +10,10 @@ import requests
 import json
 import urllib.request
 
-
-
+array1 = []  # this has the labels
 
 if (get_data_type() == 'image'):
     i = 1
-    array1 = []
     r1 = requests.get(get_request_url())
     h1 = json.loads(str(r1.text))
     d1 = h1["date"]
@@ -49,6 +47,9 @@ if (get_data_type() == 'image'):
             imgnum = i
             urllib.request.urlretrieve(imgurl, "train/" + str(imgnum) + ".jpg")
             temparray[0] = "train/" + str(imgnum) + ".jpg"
+            label_options = get_labels()
+            # TO-DO FOR SEB: SHOW THE IMAGE AND THE DESCRIPTION AND ASK THE USER TO MANUALLY PICK WHICH LABEL CORRESPONDS WITH
+            # THE IMAGE OUT OF THE LABEL OPTIONS
             temparray[1] = "somelabel"
             temparray[2] = "training"
             array1.append(temparray)
