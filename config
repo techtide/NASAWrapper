@@ -1,8 +1,9 @@
-api_key enteryourkeyhere
+api_key yourapikey
 request https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2018-09-01
+request2 https://api.nasa.gov/neo/rest/v1/feed?start_date=2018-10-17&end_date=2018-10-17&api_key=DEMO_KEY
 data_type image
 label1 asteroid
 label2 nebula
 label3 supernova
 label4 earth
-label5
+trainortest training
